@@ -46,6 +46,6 @@ services:
       - TILE_PROXY_URL=http://localhost:4326|http://data:4326
 
 networks:
-  stac01:
-    external: true
-
+  default:
+    name: stactools_browse
+    driver: bridge
